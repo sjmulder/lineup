@@ -18,4 +18,4 @@ install: all
 uninstall: all
 	${RM} ${DESTDIR}${PREFIX}/bin/lineup
 
-.PHONY: all clean
+.PHONY: all clean install uninstall
