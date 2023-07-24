@@ -21,7 +21,7 @@ main(int argc, char **argv)
 {
 	static int widths[512];
 	int n_cols=1, col=0, width=0, c;
-	char sep=' ', *in_name="<stdin>";
+	char sep='\t', *in_name="<stdin>";
 	FILE *in_file=stdin;
 
 	while ((c = getopt(argc, argv, "hd:")) != -1)
