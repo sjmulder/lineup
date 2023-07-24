@@ -1,0 +1,36 @@
+.Dd July 25, 2023
+.Dt LINEUP 1
+.Os
+.Sh NAME
+.Nm lineup
+.Nd format tabular files
+.Sh SYNOPSIS
+.Nm
+.Op Fl d Ar delim
+.Op Ar file
+.Sh DESCRIPTION
+Formats a tabular file
+.Pq e.g. tab or colon-separated
+so that the columns line up.
+The field delimiter
+.Ar delim
+defaults to the tab character.
+.Sh EXIT STATUS
+Returns 0 on success, 1 on error, or
+.Dv EX_USAGE
+.Pq 64
+on usage error.
+.Sh EXAMPLES
+Format
+.Pa /etc/passwd :
+.Dl lineup -d: /etc/passwd
+.Sh AUTHORS
+.An Sijmen J. Mulder
+.Aq Mt ik@sjmulder.nl
+.Sh BUGS
+Doesn't account for tabs, control characters, double-width characters,
+composable characters, etc.
+Can't read from a pipe.
+Missing some useful features.
+See
+.Pa TODO.md
