@@ -12,7 +12,15 @@ Example
 -------
 Format */etc/passwd*:
 
-    lineup -d: /etc/passwd
+    $ lineup -d: /etc/passwd
+    ...
+    root     * 0     0    Charlie &                    /root               /bin/ksh
+    toor     * 0     0    Bourne-again Superuser       /root               /rescue/sh
+    daemon   * 1     1    The devil himself            /                   /sbin/nologin
+    operator * 2     5    System &                     /usr/guest/operator /sbin/nologin
+    bin      * 3     7    Binaries Commands and Source /                   /sbin/nologin
+    games    * 7     13   & pseudo-user                /usr/games          /sbin/nologin
+    ...
 
 Bugs
 ----
