@@ -13,7 +13,7 @@ Example
 Format */etc/passwd*:
 
     $ lineup -d: /etc/passwd
-    ...
+
     root     * 0     0    Charlie &                    /root               /bin/ksh
     toor     * 0     0    Bourne-again Superuser       /root               /rescue/sh
     daemon   * 1     1    The devil himself            /                   /sbin/nologin
